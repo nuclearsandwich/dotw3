@@ -1,0 +1,49 @@
+body {
+	background: white;
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+	width: 1080px;
+}
+
+img.bbc_img {
+	max-width: 300px !important;
+	height: auto;
+}
+
+#main_menu, .dropmenu li {
+	background-color: #dedede;
+	font-weight: normal;
+	/* font-size: 20px; */
+}
+
+#upper_section {
+	display: none;
+}
+
+.smalltext {
+	font-size: 12px !important;
+}
+
+.dropmenu li a.firstlevel {
+	border: none;
+}
+
+.dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel {
+	border: none;
+}
+
+.dropmenu li a {
+	color: #444;
+}
+
+.dropmenu li a.active {
+	color: #333;
+}
+
+.windowbg {
+	background-color: #dedede;
+}
+
+.windowbg2 {
+	background-color: #efefef;
+}

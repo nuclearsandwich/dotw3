@@ -1,0 +1,4 @@
+// The default selected color is fucking unviewable on thinkpad screens.
+.list-browser-item.navigation-focus {
+	background-color: rgb(225, 235, 200) !important;
+}
