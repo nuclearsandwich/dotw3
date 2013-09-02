@@ -2,12 +2,20 @@ body {
 	background: white;
 	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 	font-size: 18px;
-	width: 1080px;
+	max-width: 1080px;
+}
+textarea.editor {
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }
 
-img.bbc_img {
+/* death to color */
+.postarea .bbc_color {
+	color: #333 !important;
+}
+
+.postarea img.bbc_img {
 	max-width: 300px !important;
-	height: auto;
+	height: auto !important;
 }
 
 #main_menu, .dropmenu li {
@@ -15,6 +23,16 @@ img.bbc_img {
 	font-weight: normal;
 	/* font-size: 20px; */
 }
+
+img.avatar {
+	width: 96px;
+	height: auto;
+}
+
+blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
+	font-size: 16px;
+}
+
 
 #upper_section {
 	display: none;
@@ -24,11 +42,9 @@ img.bbc_img {
 	font-size: 12px !important;
 }
 
-.dropmenu li a.firstlevel {
-	border: none;
-}
-
-.dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel {
+.dropmenu li a.firstlevel,
+.dropmenu li a.firstlevel:hover,
+.dropmenu li:hover a.firstlevel {
 	border: none;
 }
 
@@ -46,4 +62,28 @@ img.bbc_img {
 
 .windowbg2 {
 	background-color: #efefef;
+}
+
+/* Moderator */
+.post_wrapper .poster.moderator {
+	background-color: rgba(40, 148, 194, 0.6);
+}
+.post_wrapper.moderator .poster h4, .post_wrapper .poster h4 a {
+	color: #333;
+}
+
+/* Thread starter */
+.post_wrapper .poster.thread-starter {
+	background-color: rgba(191, 62, 36, 0.6);
+}
+.post_wrapper.thread-starter .poster h4, .post_wrapper .poster h4 a {
+	color: #333;
+}
+
+/* Both Moderator and Thread starter */
+.post_wrapper .poster.moderator.thread-starter {
+	background-color: white;
+	background-image: linear-gradient(45deg,
+	rgba(40, 148, 194, 0.6) 50%,
+	rgba(192, 62, 36, 0.6) 50%);
 }
