@@ -1,4 +1,6 @@
 (function() {
+	var topPadding = 60; /* Padding for scroll adjustment */
+
 	var identifyModerators = function() {
 		$(".poster li.membergroup").parents(".poster").addClass("moderator");
 	}
@@ -12,7 +14,12 @@
 		$("#forumposts .post_wrapper").each(function(index) {
 			$(this).attr("tabindex", 1000 + index);
 		}).focus(function(event) {
-			$(event.target).addClass("js-navigation-focus").addClass("navigation-focus");
+			var $target = $(event.target);
+			var scrollTop = $target.offset().top - topPadding;
+
+			$target.addClass("js-navigation-focus").addClass("navigation-focus")
+			$("html").stop().animate({ scrollTop: scrollTop }, 600);
+
 		}).blur(function(event) {
 			$(event.target).removeClass("js-navigation-focus").removeClass("navigation-focus");
 		});
