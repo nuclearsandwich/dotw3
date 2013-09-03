@@ -8,32 +8,21 @@
 	}
 
 	var initKeyboardNavigation = function() {
-		console.log("Hookign up focus");
-
-	}
-
-
-	var selectFirstPost = function() {
-		$("#forumposts .post_wrapper").first().focus();
-	}
-
-	var selectNextPost = function() {
-		return;
-	}
-
-	$(document).ready(function() {
+		/* In order to use focus() and blur(), each post needs a tabindex. */
 		$("#forumposts .post_wrapper").each(function(index) {
 			$(this).attr("tabindex", 1000 + index);
 		}).focus(function(event) {
-			$(event.target).toggleClass("js-navigation-focus").toggleClass("navigation-focus");
+			$(event.target).addClass("js-navigation-focus").addClass("navigation-focus");
 		}).blur(function(event) {
-			$(event.target).toggleClass("js-navigation-focus").toggleClass("navigation-focus");
+			$(event.target).removeClass("js-navigation-focus").removeClass("navigation-focus");
 		});
+	}
+
+	$(document).ready(function() {
 
 		identifyThreadStarters();
 		identifyModerators();
 		initKeyboardNavigation();
-		selectFirstPost();
 	})
 })();
 
