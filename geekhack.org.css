@@ -87,3 +87,8 @@ blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
 	rgba(40, 148, 194, 0.6) 50%,
 	rgba(192, 62, 36, 0.6) 50%);
 }
+
+/* keyboard navigation */
+#forumposts .post_wrapper.navigation-focus {
+	background-color: rgba(250, 250, 45, 0.2);
+}
