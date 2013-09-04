@@ -94,13 +94,10 @@ blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
 }
 
 /* keyboard navigation */
-div.navigation-focus:focus {
-	outline: none;
-}
-
 #forumposts .post_wrapper.navigation-focus {
+	outline: none;
 	margin-left: -4px;
 	border-left-width: 4px;
 	border-left-style: solid;
-	border-left-color: rgb(250, 210, 45);
+	border-left-color: rgb(233, 73, 43);
 }
