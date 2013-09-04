@@ -1,0 +1,51 @@
+body {
+	max-width: 1080px;
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+}
+
+textarea.editor {
+	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+}
+
+tt.bbc_tt {
+	font-family: "Source Code Pro", "Consolas", "Liberation Mono", "Courier", monospace;
+}
+
+#upper_section .user {
+	display: none;
+}
+
+#forumposts .post_wrapper.navigation-focus {
+	margin-left: -8px;
+	border-left-width: 8px;
+	border-left-style: solid;
+	border-left-color: rgb(233, 73, 43);
+	outline: none;
+}
+
+.post_wrapper .poster.thread-starter,
+.post_wrapper .poster.starred {
+	border-top-right-radius: 55px;
+	border-bottom-left-radius: 55px;
+	border-bottom-right-radius: 55px;
+	padding-bottom: 30px;
+}
+
+/* Thread starter */
+.post_wrapper .poster.thread-starter {
+	background-color: #444;
+}
+
+/* Starred */
+.post_wrapper .poster.starred {
+	background-color: #6a3025;
+}
+
+/* Both Moderator and Thread starter */
+.post_wrapper .poster.starred.thread-starter {
+	background-image: linear-gradient(45deg,
+	#d7553d 50%,
+	#444 50%);
+}
+
