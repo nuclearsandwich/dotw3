@@ -9,6 +9,10 @@ textarea.editor {
 	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }
 
+tt.bbc_tt {
+	font-family: "Source Code Pro", "Consolas", "Liberation Mono", "Courier", monospace;
+}
+
 /* death to color */
 .postarea .bbc_color {
 	color: #333 !important;
