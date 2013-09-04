@@ -1,7 +1,7 @@
 var topPadding = 60; /* Padding for scroll adjustment */
 
 var identifyModerators = function() {
-	$(".poster li.membergroup").parents(".poster").addClass("moderator");
+	$(".poster li.membergroup").parents(".poster").addClass("starred");
 };
 
 var identifyThreadStarters = function() {
