@@ -4,6 +4,7 @@ body {
 	font-size: 18px;
 	max-width: 1080px;
 }
+
 textarea.editor {
 	font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }
@@ -94,5 +95,8 @@ div.navigation-focus:focus {
 }
 
 #forumposts .post_wrapper.navigation-focus {
-	background-color: rgba(250, 250, 45, 0.2);
+	margin-left: -4px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	border-left-color: rgb(250, 210, 45);
 }
