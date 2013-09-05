@@ -41,7 +41,14 @@ var initKeyboardNavigation = function() {
 
 	}).blur(function(event) {
 		$(event.target).removeClass("js-navigation-focus").removeClass("navigation-focus");
-	}).first().focus();
+	});
+
+	// Select first post based on msg id.
+	if (window.location.hash.match(/^#msg/)) {
+		$(window.location.hash + "~ div .js-navigation-target").first().focus();
+	} else {
+		$(".js-navigation-container .js-navigation-target").first().focus();
+	}
 };
 
 var navigation = window.Navigation = {
