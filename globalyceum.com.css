@@ -1,7 +1,10 @@
-body { font-family: "Helvetica Neue", "Helvetica", sans-serif; }
-.i { font-weight: normal; }
-p.p {
-	font-weight: 300;
- 	font-size: 24px;
-	font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
+body {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.wht.media.p, .wht, .p.wht.media.norm, .i.grn.norm, .i.org , .brn, .blu {
+	font-weight: 300 !important;
+ 	font-size: 24px !important;
+	font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif !important;
 }
