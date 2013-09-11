@@ -2,3 +2,56 @@
 .list-browser-item.navigation-focus {
 	background-color: rgb(225, 235, 200) !important;
 }
+
+.button.primary, .minibutton.primary {
+	background-color: #4183c4;
+	border-color: #3269a0;
+	background-image: linear-gradient(#679cd0, #4183c4);
+
+}
+
+.button.primary:active, .minibutton.primary:active,
+.button.primary.selected, .minibutton.primary.selected {
+	background-color: #5892cb;
+	background-image: linear-gradient(#5892cb, #4183c4);
+	border-color: #4183c4;
+}
+
+.button.primary:disabled,
+.button.primary:disabled:hover,
+.button.primary.disabled,
+.button.primary.disabled:hover,
+.minibutton.primary:disabled,
+.minibutton.primary:disabled:hover,
+.minibutton.primary.disabled,
+.minibutton.primary.disabled:hover {
+	background-color: #4183c4;
+	background-image: linear-gradient(#5892cb, #4183c4);
+	border-color: #4183c4;
+	background-repeat: repeat-x;
+	border-color: #73a4d3 #73a4d3 #3269a0;
+}
+
+.button.primary:hover, .minibutton.primary:hover {
+	background-color: #3269a0;
+	background-image: linear-gradient(#5892cb, #3269a0);
+	border-color: #2f6398
+}
+
+.boxed-group.dangerzone > h3 {
+	background-color: #f07800;
+	background-image: linear-gradient(#f93, #f07800);
+	border-bottom-color: #b85c00;
+	text-shadow: 0 -1px 0 #b85c00;
+}
+
+.button.danger, .minibutton.danger {
+	color: #b85c00;
+}
+
+.button.danger:hover, .minibutton.danger:hover {
+	color: #fff;
+	background-color: #b85c00;
+	background-image: linear-gradient(#f93, #b85c00);
+	border-color: #d66b00;
+}
