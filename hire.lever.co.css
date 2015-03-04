@@ -1,0 +1,68 @@
+ /* Font size and weight */
+body, .card-key, .card-value, .content-section, .content-sub-section,
+.email-message, .email-message-text, .email-thread-header,
+.filtervis-list .filtervis-list-item,
+.last-action, .profile-note-preview,
+.list-profile .candidate-name,
+.list-profile .snippet {
+	font-weight: normal !important;
+}
+
+.card-field .card-value,
+.filtervis-list .filtervis-list-item .posting-item,
+.list-profile .list-date {
+	font-size: 14px;
+}
+
+
+/* Kill the flyover pane */
+.flyover {
+	width: 100%;
+}
+
+.flyover-full, .flyover-inbox {
+	left: 0;
+}
+
+.profiles-history .limited-width, .history-content .limited-width {
+	max-width: 100%;
+}
+
+/* Listing colors */
+.list-profile .candidate-name,
+.list-profile .list-date,
+.list-profile .snippet,
+.list-profile .list-actions {
+	color: #666 !important;
+}
+
+/* Navigation colors */
+.history-filter-link.active,
+.history-filter-link.active .icon > path {
+	color: #eee !important;
+	fill: #eee !important;
+}
+.history-filter-link.inactive,
+.history-filter-link.inactive .icon > path {
+	color: #666 !important;
+	fill: #666 !important;
+}
+
+.label {
+	color: #666 !important;
+}
+
+.sidebar {
+	border-left: 1px solid #666;
+}
+
+.body, .sidebar, .list-controls {
+	background-color: #fcfcfc;
+}
+
+/* Make the filter bar have a light background and dark text */
+.filtervis-section .filter-container .suggest-input {
+	background: none repeat #fff;
+	border-color: #444;
+	color: #666;
+}
