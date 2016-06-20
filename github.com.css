@@ -1,57 +1,115 @@
-// The default selected color is fucking unviewable on thinkpad screens.
-.list-browser-item.navigation-focus {
-	background-color: rgb(225, 235, 200) !important;
+.list-group-item.navigation-focus {
+	background-color: rgb(230, 230, 235) !important;
 }
 
-.button.primary, .minibutton.primary {
-	background-color: #4183c4;
-	border-color: #3269a0;
-	background-image: linear-gradient(#679cd0, #4183c4);
-
+.branch-action-state-clean .branch-action-body::before {
+	border-right-color: #4183c4;
 }
-
-.button.primary:active, .minibutton.primary:active,
-.button.primary.selected, .minibutton.primary.selected {
-	background-color: #5892cb;
-	background-image: linear-gradient(#5892cb, #4183c4);
+.branch-action-state-clean .branch-action-body {
 	border-color: #4183c4;
 }
 
-.button.primary:disabled,
-.button.primary:disabled:hover,
-.button.primary.disabled,
-.button.primary.disabled:hover,
+.branch-action-state-clean .branch-action-icon,
+.branch-action-item-icon.completeness-indicator-success,
+.state.state-open {
+	background-color: #4183c4;
+}
+
+.octicon.check,
+.octicon.open,
+.type-icon-state-open {
+	color: #4183c4;
+}
+
+.branch-action-state-unstable .branch-action-body::before {
+	border-right-color: #f07800;
+}
+.branch-action-state-unstable .branch-action-body {
+	border-color: #f07800;
+}
+
+
+.octicon.closed,
+.build-status-icon.text-failure,
+.text-error, .text-failure,
+.type-icon-state-closed {
+	color: #f07800;
+}
+
+.branch-action-state-unstable .branch-action-icon,
+.branch-action-item-icon.completeness-indicator-error,
+.state.state-closed {
+	background-color: #f07800;
+}
+
+a.btn.btn-primary, button.btn-primary, .minibutton.primary,
+input.btn.btn-primary {
+	background-color: #4183c4;
+	border-color: #3269a0;
+	background-image: none;
+}
+
+button.btn-primary:active, .minibutton.primary:active,
+.button.primary.selected, .minibutton.primary.selected {
+	background-color: #5892cb;
+	background-image: none;
+	border-color: #4183c4;
+}
+
+button.btn-primary:disabled,
+button.btn-primary:disabled:hover,
+button.btn-primary.disabled,
+button.btn-primary.disabled:hover,
 .minibutton.primary:disabled,
 .minibutton.primary:disabled:hover,
 .minibutton.primary.disabled,
 .minibutton.primary.disabled:hover {
 	background-color: #4183c4;
-	background-image: linear-gradient(#5892cb, #4183c4);
+	background-image: none;
 	border-color: #4183c4;
 	background-repeat: repeat-x;
 	border-color: #73a4d3 #73a4d3 #3269a0;
 }
 
-.button.primary:hover, .minibutton.primary:hover {
+a.btn.btn-primary:hover, button.btn-primary:hover, .minibutton.primary:hover {
 	background-color: #3269a0;
-	background-image: linear-gradient(#5892cb, #3269a0);
+	background-image: none;
 	border-color: #2f6398
 }
 
 .boxed-group.dangerzone > h3 {
 	background-color: #f07800;
-	background-image: linear-gradient(#f93, #f07800);
-	border-bottom-color: #b85c00;
+	background-image: none;
+	border-color: #b85c00;
 	text-shadow: 0 -1px 0 #b85c00;
 }
 
-.button.danger, .minibutton.danger {
+a.btn.btn-danger,
+button.btn-danger,
+.minibutton.danger {
 	color: #b85c00;
 }
 
-.button.danger:hover, .minibutton.danger:hover {
+a.btn.btn-danger:hover,
+button.btn-danger:hover,
+.minibutton.danger:hover {
 	color: #fff;
-	background-color: #b85c00;
-	background-image: linear-gradient(#f93, #b85c00);
+	background-color: #f07800;
+	background-image: none;
 	border-color: #d66b00;
+}
+
+.reaction-popover-container, .comment-reactions {
+	display: none;
+}
+
+.btn, .btn:hover {
+	background-image: none;
+}
+.btn:active, .btn.selected, .btn.zeroclipboard-is-active {
+	box-shadow: none;
+}
+
+.alert.member_add.simple {
+	display: none;
 }
